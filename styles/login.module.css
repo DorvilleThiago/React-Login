@@ -1,0 +1,26 @@
+@keyframes slide-in {
+    from {
+      transform: scale(0.8)
+    }
+    to {
+     opacity: 1;
+     transform: scale(1.0)
+    }
+  }
+
+.container {
+    display: flex;
+    background-image: linear-gradient(to bottom right, #d0ffbe, #48793b);
+    flex-direction: column;
+    height: 905px;
+}
+.form {
+    
+    align-self: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: slide-in 1000ms;
+    animation-fill-mode: forwards;
+}
